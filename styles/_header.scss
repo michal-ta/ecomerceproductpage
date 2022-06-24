@@ -1,0 +1,19 @@
+.navigation{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.2fr 0.2fr;
+    align-items: center;
+}
+
+.nav_buton{
+    display: flex;
+    flex-direction: row;
+    
+    .menu_list{
+        list-style: none;
+        padding:em(25) em(12) em(25) em(32);
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
