@@ -43,6 +43,11 @@
   cursor: pointer;
 }
 
+.main_picture {
+  height: 50px;
+  width: 50px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
