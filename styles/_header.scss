@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr 0.2fr;
     align-items: center;
+    justify-items: center;
+    border-bottom: em(1) solid $grayish_blue_darker;
 }
 
 .nav_buton{
@@ -16,4 +18,13 @@
             cursor: pointer;
         }
     }
+}
+
+.avatar{
+    height: 100%;
+}
+.avatar_picture{
+    display: inline-block;
+    height: 55%;
+    width: auto;
 }
