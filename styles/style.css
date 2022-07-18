@@ -6,11 +6,14 @@
   font-family: 'Kumbh Sans', sans-serif;
 }
 
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
 .layout {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
-  width: 100vw;
   -ms-grid-rows: 0.2fr 1fr 0.1fr;
       grid-template-rows: 0.2fr 1fr 0.1fr;
   padding: 0.75em 3.125em;
@@ -73,10 +76,10 @@
 .pictures {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 2fr 0.35fr;
-      grid-template-rows: 2fr 0.35fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1.5fr 0.35fr;
+      grid-template-rows: 1.5fr 0.35fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -85,22 +88,20 @@
 }
 
 .main_wrapper {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80%;
   height: 100%;
 }
 
 .small_wrapper {
-  -ms-grid-row: 2;
-  grid-row: 2/2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-column: 1/6;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,7 +115,7 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 80%;
+  height: 70%;
   border-radius: 0.75em;
 }
 
