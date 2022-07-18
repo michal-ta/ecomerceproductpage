@@ -1,14 +1,23 @@
 .navigation{
-    display: grid;
-    grid-template-columns: 0.2fr 1fr 0.2fr 0.2fr;
+    grid-column: 1/13;
+    grid-row: 1/2;
+    display:grid;
+    grid-template-columns: repeat(12,1fr);
     align-items: center;
     justify-items: center;
     border-bottom: em(1) solid $grayish_blue_darker;
 }
 
+.logo{
+    grid-column: 0/2;
+}
+
 .nav_buton{
+    grid-column: 3/10;
+    justify-self: flex-start;
     display: flex;
     flex-direction: row;
+
     
     .menu_list{
         list-style: none;
@@ -20,8 +29,14 @@
     }
 }
 
+.cart{
+    grid-column: 11/12;
+}
 .avatar{
+    grid-column: 12/13;
     height: 100%;
+
+
 }
 .avatar_picture{
     display: inline-block;

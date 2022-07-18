@@ -11,7 +11,7 @@ body{
 }
 .layout{
     display:grid;
-    
-    grid-template-rows: 0.2fr 1fr 0.1fr;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 0.2fr 1fr 0.2fr;
     padding: em(12) em(50);
 }
