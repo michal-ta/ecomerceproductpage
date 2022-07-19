@@ -105,24 +105,16 @@
     background-color: $grayish_blue_darker;
     width: 100%;
     align-content: center;
-    justify-content: center;
-    padding: em(22);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: em(18);
     font-weight: 900;
     border-radius: em(14);
     font-size: 22px;
+}
 
-    &::before{
-        content: "-";
-        padding-right: em(40,22);
-        color: $color_orange;
-        font-size: 22px;
-    }
-    &::after{
-        content: "+";
-        padding-left: em(40,22);
-        color: $color_orange;
-        font-size: 22px;
-    }
+.mark_minus{
+    margin-top: em(6);
 }
 .add_cart{
     margin-left: em(15);
@@ -135,7 +127,7 @@
     width: 90%;
     font-size: 22px;  
     border-radius: em(14);
-    padding: em(22);
+    padding: em(17);
     
     text-decoration: none;
     font-weight: 900;
