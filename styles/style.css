@@ -278,7 +278,20 @@ body {
 }
 
 .mark_minus {
-  margin-top: 0.375em;
+  -webkit-transform: translateY(0.175em);
+          transform: translateY(0.175em);
+}
+
+.mark_minus:hover, .mark_minus:active {
+  -webkit-filter: contrast(250%) sepia(65%);
+          filter: contrast(250%) sepia(65%);
+  cursor: pointer;
+}
+
+.mark_plus:hover, .mark_plus:active {
+  -webkit-filter: contrast(250%) sepia(65%);
+          filter: contrast(250%) sepia(65%);
+  cursor: pointer;
 }
 
 .add_cart {
@@ -303,6 +316,14 @@ body {
   padding: 1.0625em;
   text-decoration: none;
   font-weight: 900;
+}
+
+.add_cart:hover {
+  background-color: #ff6f00;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .add_cart::before {

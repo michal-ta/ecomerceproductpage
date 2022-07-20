@@ -114,8 +114,20 @@
 }
 
 .mark_minus{
-    margin-top: em(6);
+    transform: translateY(em(2.8));
+    &:hover, &:active{
+        filter: contrast(250%) sepia(65%);
+        cursor: pointer;
+    }
 }
+
+.mark_plus{
+    &:hover, &:active{
+        filter: contrast(250%) sepia(65%);
+        cursor: pointer;
+    }
+}
+
 .add_cart{
     margin-left: em(15);
     grid-row: 6/7;
@@ -128,9 +140,14 @@
     font-size: 22px;  
     border-radius: em(14);
     padding: em(17);
-    
     text-decoration: none;
     font-weight: 900;
+
+    &:hover{
+        background-color: darken($color_orange,5%);
+        transition: all 0.25s ease-in;
+        transform: scale(1.02);
+    }
 
     &::before{
         content: url(../IMG/images/icon-cart.svg);
