@@ -4,7 +4,7 @@
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
     justify-content:space-around ;
-    padding: em(60) em(20);
+    padding: em(20) em(60) 0 em(60);
 }
 
 .pictures{
@@ -41,7 +41,15 @@
     height: 50%;
     width: 19%;
     border-radius: em(12);
-    
+
+    &:hover{
+        filter: opacity(25%);
+        
+    }
+    &.active{
+        border: solid em(2) $color_orange;
+        
+    }
 }
 .main_picture{
     display: inline-block;
@@ -169,17 +177,3 @@
 }
 
 
-.svg.active{
-    &::after{
-        content: "2";
-        color: $white;
-        font-size: 9px;
-        background-color:$color_orange ;
-        padding: em(5,11) em(6,11);
-        border-radius:45%;
-        position: relative;
-        top: em(-18,9);
-        left: em(-12,9);
-        
-    }
-}

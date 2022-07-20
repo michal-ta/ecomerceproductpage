@@ -10,6 +10,8 @@ body{
     width: 100vw;
 }
 .layout{
+    height: 100%;
+    width: 100%;
     display:grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 0.2fr 1fr 0.2fr;
