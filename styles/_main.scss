@@ -81,28 +81,37 @@
 
 .price{
     grid-row: 4/5;
-    grid-column: 1/3;
+    grid-column: 1/2;
     justify-self: flex-start;
     align-self: center;
+    font-weight: 900;
+    font-size: 25px;
 }
 
 .sale{
     grid-row: 4/5;
-    grid-column: 3/4;
+    grid-column: 2/4;
     justify-self: center;
     justify-self: flex-start;
+    background-color: $color_orangeshadow;
+    padding: em(3) em(12);
+    border-radius: em(5);
+    justify-self: flex-start;
+
     
 }
-.total_price{
+.before_price{
     grid-row: 5/6;
     grid-column: 1/3;
+    text-decoration: line-through;
+    color: $grayish_blue_darker;
 }
 
 .numbers_item{
     grid-row: 6/7;
     grid-column: 1/3;
     display: flex;
-    background-color: $grayish_blue_darker;
+    background-color: darken($grayish_blue,5%);
     width: 100%;
     align-content: center;
     justify-content: space-evenly;
@@ -111,6 +120,8 @@
     font-weight: 900;
     border-radius: em(14);
     font-size: 22px;
+    color: $black;
+
 }
 
 .mark_minus{
@@ -142,11 +153,11 @@
     padding: em(17);
     text-decoration: none;
     font-weight: 900;
+    box-shadow: em(0) em(10) em(20) $color_orangeshadow ,em(0) em(10) em(20) $color_orangeshadow ,em(0) em(10) em(20) $color_orangeshadow;
 
     &:hover{
         background-color: darken($color_orange,5%);
         transition: all 0.25s ease-in;
-        transform: scale(1.02);
     }
 
     &::before{
@@ -155,4 +166,20 @@
         font-weight: 900;
     }
 
+}
+
+
+.svg.active{
+    &::after{
+        content: "2";
+        color: $white;
+        font-size: 9px;
+        background-color:$color_orange ;
+        padding: em(5,11) em(6,11);
+        border-radius:45%;
+        position: relative;
+        top: em(-18,9);
+        left: em(-12,9);
+        
+    }
 }

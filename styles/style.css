@@ -83,6 +83,20 @@ body {
   display: inline-block;
   height: 55%;
   width: auto;
+  -webkit-transform: translateY(0.9375em);
+          transform: translateY(0.9375em);
+}
+
+.svg.active::after {
+  content: "2";
+  color: white;
+  font-size: 9px;
+  background-color: #ff7d1a;
+  padding: 0.45455em 0.54545em;
+  border-radius: 45%;
+  position: relative;
+  top: -2em;
+  left: -1.33333em;
 }
 
 .product {
@@ -222,33 +236,41 @@ body {
   -ms-grid-row-span: 1;
   grid-row: 4/5;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
   justify-self: flex-start;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-weight: 900;
+  font-size: 25px;
 }
 
 .sale {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
   -ms-grid-column-align: center;
       justify-self: center;
   justify-self: flex-start;
+  background-color: #ffede0;
+  padding: 0.1875em 0.75em;
+  border-radius: 0.3125em;
+  justify-self: flex-start;
 }
 
-.total_price {
+.before_price {
   -ms-grid-row: 5;
   -ms-grid-row-span: 1;
   grid-row: 5/6;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
+  text-decoration: line-through;
+  color: #b6bcc8;
 }
 
 .numbers_item {
@@ -261,7 +283,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #b6bcc8;
+  background-color: #e2e8f9;
   width: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -275,6 +297,7 @@ body {
   font-weight: 900;
   border-radius: 0.875em;
   font-size: 22px;
+  color: black;
 }
 
 .mark_minus {
@@ -316,20 +339,32 @@ body {
   padding: 1.0625em;
   text-decoration: none;
   font-weight: 900;
+  -webkit-box-shadow: 0em 0.625em 1.25em #ffede0, 0em 0.625em 1.25em #ffede0, 0em 0.625em 1.25em #ffede0;
+          box-shadow: 0em 0.625em 1.25em #ffede0, 0em 0.625em 1.25em #ffede0, 0em 0.625em 1.25em #ffede0;
 }
 
 .add_cart:hover {
   background-color: #ff6f00;
   -webkit-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 
 .add_cart::before {
   content: url(../IMG/images/icon-cart.svg);
   padding-right: 1.375em;
   font-weight: 900;
+}
+
+.svg.active::after {
+  content: "2";
+  color: white;
+  font-size: 9px;
+  background-color: #ff7d1a;
+  padding: 0.45455em 0.54545em;
+  border-radius: 45%;
+  position: relative;
+  top: -2em;
+  left: -1.33333em;
 }
 
 .footer {

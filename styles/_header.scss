@@ -42,4 +42,20 @@
     display: inline-block;
     height: 55%;
     width: auto;
+    transform: translateY(em(15));
+}
+
+.svg.active{
+    &::after{
+        content: "2";
+        color: $white;
+        font-size: 9px;
+        background-color:$color_orange ;
+        padding: em(5,11) em(6,11);
+        border-radius:45%;
+        position: relative;
+        top: em(-18,9);
+        left: em(-12,9);
+        
+    }
 }
